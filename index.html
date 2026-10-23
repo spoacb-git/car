@@ -1,0 +1,55 @@
+<html>
+<p>
+<input type="button" value="START" onclick="car(1)"><br>
+<input type="button" value="STOP" onclick="car(0)"><br>
+<input type="button" value="GO" onclick="car(2)"><br>
+<input type="button" value="BACK" onclick="car(3)"><br>
+<input type="button" value="LEFT" onclick="car(4)"><br>
+<input type="button" value="RIGHT" onclick="car(5)"><br>
+<input type="button" value="ALERT" onclick="car(6)"><br>
+
+</p>
+<img id="img1" src="ferrari_1_off.pngg" hight="200" width="200">
+
+<p id="p1"></p>
+<script>
+
+function car(x)
+{
+if(x==0){
+document.getElementById("img1").src="ferrari_1_off.png";
+document.getElementById("p1").innerHTML="Car Stoped";
+}
+else if(x==1){
+document.getElementById("img1").src="ferrari_2_on.png";
+document.getElementById("p1").innerHTML="Car Started";
+
+}
+else if(x==2){
+document.getElementById("img1").src="ferrari_3_forward.png";
+document.getElementById("p1").innerHTML="Car running";
+
+}
+else if(x==3){
+document.getElementById("img1").src="ferrari_4_backward.png";
+document.getElementById("p1").innerHTML="Moving back";
+
+}
+else if(x==4){
+document.getElementById("img1").src="ferrari_5_left.png";
+document.getElementById("p1").innerHTML="Moving left";
+
+}
+else if(x==5){
+document.getElementById("img1").src="ferrari_7_right.png";
+document.getElementById("p1").innerHTML="Moving right";
+}
+
+else if(x==6){
+document.getElementById("img1").src="ferrari_6_alert.png";
+document.getElementById("p1").innerHTML="Car ALERT";
+}
+
+}
+</script>
+</html>
